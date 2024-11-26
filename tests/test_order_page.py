@@ -8,7 +8,7 @@ from data import UserData
 class TestOrderPage:
     @allure.title("Тест оформления заказа по клику на кнопку 'Заказать' вверху страницы")
 
-    def test_place_an_order_one(self, driver):
+    def test_place_an_order_header(self, driver):
         order_page = OrderPage(driver)
         main_page = MainPage(driver)
         driver.get(Urls.MAIN_PAGE)
@@ -18,7 +18,7 @@ class TestOrderPage:
 
     @allure.title("Тест оформления заказа по клику на кнопку 'Заказать' внизу страницы")
 
-    def test_down_an_order_one(self, driver):
+    def test_place_an_order_down(self, driver):
         order_page = OrderPage(driver)
         main_page = MainPage(driver)
         driver.get(Urls.MAIN_PAGE)
